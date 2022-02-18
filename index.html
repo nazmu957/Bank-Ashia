@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Money Tracker</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./resources/images/favicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+<body>
+    <header class="container">
+        <h1>Money Tracker</h1>
+    </header>
+    <main class="container">
+        <div class="left-section">
+            <img src="./resources/images/main-img.jpeg" alt="Main Images" class="main-img">
+        </div>
+        <div class="right-section">
+            <div class="income">
+                <h2>Income</h2>
+                <form action="#">
+                    <div class="input-1">
+                        <label for="income">Income:</label>
+                        <input type="text" id="total-income" name="income">
+                    </div>
+                </form>
+            </div>
+            <div class="expenses">
+                <h2>Expenses</h2>
+                <form action="#">
+                    <div class="input-2">
+                        <label for="food">Food:</label>
+                        <input type="text" id="food-exp" name="food">
+                    </div>
+                    <div class="input-3">
+                        <label for="rent">Rent:</label>
+                        <input type="text" id="rent-exp" name="rent">
+                    </div>
+                    <div class="input-4">
+                        <label for="cloth">Clothes:</label>
+                        <input type="text" id="cloth-exp" name="cloth">
+                    </div>
+                </form>
+                <button class="btn btn-calculate" id="calculate-btn">Calculate</button>
+            </div>
+            <div class="total">
+                <h2>Total Expenses: <sapn id="total-exp">0</sapn></h2>
+                <h2>Balance: <span id="balance">0</span></h2>
+                <div class="saving">
+                    <form action="#" class="save-form">
+                        <div class="input-5">
+                            <label for="save">Save:</label>
+                            <input type="text" id="saving-percent" name="save">
+                        </div>
+                        <span>%</span>
+                    <button class="btn btn-save" id="save-btn">Save</button>
+                    </form>
+                </div>
+                <h2>Saving Amount: <span id="saving-amount">0</span></h2>
+                <h2>Remaining Balance: <span id="remaining-blanace">0</span></h2>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="./resources/js/script.js"></script>
+</body>
+</html>
